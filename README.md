@@ -64,6 +64,83 @@ Uno denominado como "datos_unificados.csv" y el otro como "datos_demograficos.cs
 Los dos archivos anteriores cuentan con la información ya procesada y lista para su uso.
 
 
-## Explicación del código "dashboard_academico.py"
+## 📊 Explicación del código "dashboard_academico.py"
 
-### Inserte titulo acá
+Este proyecto es un dashboard interactivo desarrollado con Streamlit, diseñado para visualizar el rendimiento académico de los estudiantes. Permite a los usuarios aplicar filtros, observar métricas clave y explorar gráficas dinámicas a partir de datos procesados.
+
+### 🎯 Objetivo
+
+Proveer una herramienta visual y accesible para analizar:
+- Promedios de calificaciones
+- Porcentajes de asistencia
+- Tasa de materias aprobadas
+- Categorías de rendimiento
+
+### 📂 Estructura del Proyecto
+
+- dashboard_academico.py: archivo principal que contiene el código del dashboard.
+- resumen_alumnos.csv: archivo con los datos procesados (promedios, rendimiento, etc.).
+- requirements.txt: archivo con las dependencias necesarias para ejecutar el proyecto.
+
+### ▶️ Requisitos
+
+Asegúrate de tener instalado:
+
+- Python 3.11 (recomendado, evita 3.13 por problemas de compatibilidad)
+- pip (gestor de paquetes)
+
+### 📦 Instalación
+
+1. Clona o descarga este repositorio.
+2. Abre una terminal en la carpeta del proyecto.
+3. Instala las dependencias:
+   pip install -r requirements.txt
+
+### 🚀 Ejecución
+
+1. Asegúrate de que el archivo resumen_alumnos.csv esté en la misma carpeta que el dashboard.
+2. Ejecuta el dashboard con:
+   streamlit run dashboard_academico.py
+3. Se abrirá una ventana en tu navegador con la aplicación.
+
+### 📊 Funcionalidades
+
+- Filtros por grupo y semestre.
+- Cálculo automático de:
+  - Promedio general
+  - Asistencia promedio
+  - Tasa de aprobación
+- Gráficos:
+  - Histograma de calificaciones
+  - Histograma de asistencia
+  - Gráfico circular de categorías de rendimiento
+
+### 🛠️ Tecnologías Usadas
+
+- Streamlit
+- Pandas
+- Plotly
+
+### 🧪 Datos de entrada esperados
+
+El archivo resumen_alumnos.csv debe contener las siguientes columnas:
+
+- id_alumno
+- nombre
+- grupo
+- semestre
+- calificacion_promedio
+- asistencia_promedio
+- porcentaje_aprobadas
+- rendimiento
+
+### 📌 Notas
+
+- Si usas Python 3.13, puedes experimentar errores con algunas bibliotecas. Se recomienda usar Python 3.10 o 3.11.
+- En caso de errores con DLLs o instalación, verifica que Python esté correctamente agregado al PATH.
+
+### ✨ Autores
+
+Proyecto desarrollado como parte de una práctica de análisis académico con enfoque en ETL, visualización de datos y desarrollo ágil por:
+- Adam Rafael Calderon Godinez.
+- Edwin Amitiel Montoya Aguilar.
